@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Job Application Form</title>
+		<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		fieldset {
+			border: none;
+			margin-bottom: 20px;
+		}
+
+		legend {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		select,
+		textarea {
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+
+		input[type="submit"],
+		input[type="reset"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover {
+			background-color: #45a049;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 10px;
+		}
+
+		th,
+		td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<form action="./formsubmit.html">
+		<fieldset>
+		<legend>Personal Information</legend>
+		<label for="name">Name</label>
+		<input required type="text" name="name" id="name" placeholder="Write your name here"> 
+		<br><br>
+		<label for="fathersName">Father's Name</label>
+		<input required type="text" name="father's_name" id="fathersName" placeholder="Write your father name here">
+		<br><br>
+		<label for="cnic">CNIC#:</label>
+  		<input required type="text" id="cnic" name="cnic#" placeholder="XXXXX-XXXXXXX-X" maxlength="15">
+  		<br><br>
+  		<label for="dob">Date of Birth</label>
+		<input type="date" id="dob" name="date_of_birth">
+		<br><br>
+		<label for="gender">Gender</label>
+		<select required id="gender" name="gender">
+			<option value="" selected disabled>Select Gender</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">other</option>
+		</select>
+		<br><br>
+		<label for="religion">Religion</label>
+		<select id="religion" name="religion">
+    		<option value="" selected="selected" disabled>-- select one --</option>
+    		<option value="Christianity">Christianity</option>
+   			<option value="Hinduism">Hinduism</option>
+   			<option value="Islam">Islam</option>
+			<option value="Other">Other</option>
+  		</select>
+		<br><br>
+		<label for="marital_status">Marital Status</label>
+		<select name="marital_status" id="marital_status">
+   	 		<option value="" disabled selected>-Select Marital Status-</option>
+    		<option value="married">Married</option>
+    		<option value="unmarried">Un Married</option>
+    		<option value="divorced">Divorced</option>
+		</select>
+		<br><br>
+		<label for="domicile_district">Domicile District</label>
+		<select id="domicile_district" name="domicile-district">
+    		<option value="" selected disabled>Select District</option>
+			  <option value="Abbottabad">Abbottabad</option>
+			  <option value="Attock">Attock</option>
+			  <option value="Bahawalnagar">Bahawalnagar</option>
+			  <option value="Bahawalpur">Bahawalpur</option>
+			  <option value="Bannu">Bannu</option>
+			  <option value="Bhakkar">Bhakkar</option>
+			  <option value="Chakwal">Chakwal</option>
+			  <option value="Chiniot">Chiniot</option>
+			  <option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+			  <option value="Dera Ismail Khan">Dera Ismail Khan</option>
+			  <option value="Faisalabad">Faisalabad</option>
+			  <option value="Gujranwala">Gujranwala</option>
+			  <option value="Gujrat">Gujrat</option>
+			  <option value="Hafizabad">Hafizabad</option>
+			  <option value="Hyderabad">Hyderabad</option>
+			  <option value="Islamabad">Islamabad</option>
+			  <option value="Jacobabad">Jacobabad</option>
+			  <option value="Jhang">Jhang</option>
+			  <option value="Kasur">Kasur</option>
+			  <option value="Khanewal">Khanewal</option>
+			  <option value="Khushab">Khushab</option>
+			  <option value="Kohat">Kohat</option>
+			  <option value="Lahore">Lahore</option>
+			  <option value="Larkana">Larkana</option>
+			  <option value="Lodhran">Lodhran</option>
+			  <option value="Mandi Bahauddin">Mandi Bahauddin</option>
+			  <option value="Mansehra">Mansehra</option>
+			  <option value="Mardan">Mardan</option>
+			  <option value="Mirpur Khas">Mirpur Khas</option>
+			  <option value="Multan">Multan</option>
+			  <option value="Muzaffargarh">Muzaffargarh</option>
+			  <option value="Nawabshah">Nawabshah</option>
+			  <option value="Okara">Okara</option>
+			  <option value="Peshawar">Peshawar</option>
+			  <option value="Quetta">Quetta</option>
+			  <option value="Rahim Yar Khan">Rahim Yar Khan</option>
+			  <option value="Rawalpindi">Rawalpindi</option>
+			  <option value="Sahiwal">Sahiwal</option>
+			  <option value="Sargodha">Sargodha</option>
+			  <option value="Sheikhupura">Sheikhupura</option>
+			  <option value="Sialkot">Sialkot</option>
+			  <option value="Sukkur">Sukkur</option>
+			  <option value="Swabi">Swabi</option>
+			  <option value="Swat">Swat</option>
+			  <option value="Tando Allahyar">Tando Allahyar</option>
+			  <option value="Vehari">Vehari</option>
+		</select>
+		<br><br>
+		</fieldset>
+
+		<fieldset>
+		<legend>Educational Information</legend>
+		<table >
+   			<tr>
+      		<th>Sr#</th>
+      		<th>Certificate</th>
+      		<th>Passing Year</th>
+      		<th>Obtained Marks</th>
+      		<th>Total Marks</th>
+    		</tr>
+    		<tr>
+    			<td><input type="text" maxlength="1" size="1"></td>
+    			<td><input type="text"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    		</tr>
+    		<tr>
+    			<td><input type="text" maxlength="1" size="1"></td>
+    			<td><input type="text"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    		</tr>
+    		<tr>
+    			<td><input type="text" maxlength="1" size="1"></td>
+    			<td><input type="text"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    			<td><input type="text" maxlength="4" size="4"></td>
+    		</tr>
+    	</table>
+   	 	</fieldset>
+   	 	<fieldset>
+   	 		<legend>Contact Information</legend>
+   	 			<label for="email">Email</label>
+   	 			<input required type="email" name="email" id="email" placeholder="abc@gmail.com">
+   	 			<br><br>
+   	 			<label for="phone">Phone#</label>
+   	 			<input required type="tel" name="phone#" id="phone" placeholder="03XXXXXXXXX" maxlength="11">
+   	 			<br><br>
+   	 			<label for="current_adress">Current Adress</label>
+   	 			<br>
+   	 			<textarea name="current_adress" id="current_adress" placeholder="Write your current adress here "></textarea>
+   	 			<br><br>
+   	 			<label for="permanent-adress">Permanent Adress</label>
+   	 			<br>
+   	 			<textarea required name="permanent-adress" id="permanent-adress" placeholder="Write your permanent adress here"></textarea>
+   	 			<br><br>
+   	 			<label for="city">City</label>
+   	 			<input required type="text" name="city" id="city" placeholder="Write your City here">
+   	 			<br><br>
+   	 			<label for="province">Province</label>
+   	 			<input type="text" name="province" id="province" placeholder="Write your Province here">
+   	 			<br><br>
+   	 			<label for="country">Country</label>
+   	 			<input type="text" name="country" id="country" placeholder="Write your country here">
+   	 			<br><br> 
+   	 	</fieldset>
+   	 	<input type="submit" name="submit">
+   	 	<input type="reset" name="submit">
+	</form>
+</html>
